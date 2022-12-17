@@ -36,7 +36,7 @@ public class BoardController {
         return "redirect:list";
     }
 
-    @RequestMapping(value = "/editpost/{id}", method = RequestMethod.GET)
+    @RequestMapping(value = "/editform/{id}", method = RequestMethod.GET)
     public String editPost(@PathVariable("id") int id, Model model) {
         BoardVO boardVO = boardService.getBoard(id);
         model.addAttribute("u", boardVO);

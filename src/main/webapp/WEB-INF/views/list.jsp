@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+<%@ page language="java" contentType="text/html; charset=UTF-8" isELIgnored="false"
          pageEncoding="UTF-8"%>
 <%@page import="com.example.dao.BoardDAO, com.example.bean.BoardVO,java.util.*"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
@@ -40,6 +40,7 @@
 <table id="list" width="90%">
     <tr>
         <th>Id</th>
+        <th>Category</th>
         <th>Title</th>
         <th>Writer</th>
         <th>Content</th>
@@ -55,7 +56,7 @@
             <td>${u.writer}</td>
             <td>${u.content}</td>
             <td>${u.regdate}</td>
-            <td><a href="editform/${u.seq()}">Edit</a></td>
+            <td><a href="editform/${u.seq}">Edit</a></td>
             <td><a href="javascript:delete_ok('${u.seq}')">Delete</a></td>
         </tr>
     </c:forEach>
