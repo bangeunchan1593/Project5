@@ -4,38 +4,60 @@ import java.util.Date;
 
 public class BoardVO {
 	private int seq;
-	private String category;
-	private String title;
-	private String writer;
-	private String content;
+	private String restaurant;
+	private String menu;
+	private String price;
+	private String open_time;
+	private String close_time;
+	private String location;
+	private String star_point;
+	private String review;
 	private Date regdate;
 	private int cnt;
 	
 	public int getSeq() { return seq; }
 	public void setSeq(int seq) { this.seq = seq; }
-	public String getTitle() {
-		return title;
+	public String getRestaurant() { return restaurant; }
+	public void setRestaurant(String restaurant) {
+		this.restaurant = restaurant;
 	}
-	public void setTitle(String title) {
-		this.title = title;
+	public String getMenu() {
+		return menu;
 	}
-	public String getWriter() {
-		return writer;
+	public void setMenu(String menu) {
+		this.menu = menu;
 	}
-	public void setWriter(String writer) {
-		this.writer = writer;
+	public String getPrice() {
+		return price;
 	}
-	public String getContent() {
-		return content;
+	public void setPrice(String price) {
+		this.price = price;
 	}
-	public void setContent(String content) {
-		this.content = content;
+	public String getOpen_time() {
+		return open_time;
 	}
-	public String getCategory() {
-		return category;
+	public void setOpen_time(String open_time) {
+		this.open_time = open_time;
 	}
-	public void setCategory(String category) {
-		this.category = category;
+	public String getClose_time() {
+		return close_time;
+	}
+	public void setClose_time(String close_time) {
+		this.close_time = close_time;
+	}
+	public String getLocation() {
+		return location;
+	}
+	public void setLocation(String location) {
+		this.location = location;
+	}
+	public String getStar_point() { return star_point; }
+	public void setStar_point(String star_point) { this.star_point = star_point; }
+	public String getReview() {
+		return review;
+	}
+	public void setReview(String review) {
+		this.review = review;
 	}
 	public Date getRegdate() {
 		return regdate;

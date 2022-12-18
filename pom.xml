@@ -5,6 +5,9 @@
   <artifactId>Project5</artifactId>
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
+  <properties>
+    <org.springframework-version>4.2.4.RELEASE</org.springframework-version>
+  </properties>
   <build>
     <plugins>
       <plugin>

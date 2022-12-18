@@ -3,12 +3,12 @@
 <%@page import="com.example.dao.BoardDAO, com.example.bean.BoardVO"%>
 <%
 	String sid = request.getParameter("id");
-	if (sid != ""){  
+	if (sid != ""){
 		int id = Integer.parseInt(sid);
 		BoardVO u = new BoardVO();
 		u.setSeq(id);
 		BoardDAO boardDAO = new BoardDAO();
-		boardDAO.deleteBoard(u);
+		boardDAO.deleteBoard(id);
 	}
 	response.sendRedirect("posts.jsp");
 %>
